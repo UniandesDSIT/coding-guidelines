@@ -9,4 +9,7 @@ Este repositorio contiene los lineamientos de desarrollo de software para los pr
 1. Lineamientos para el versionamiento de código
 	* [Lineamientos para el manejo de ramas](./versionamiento/BRANCHES.md)
 	* [Lineamientos para el uso de ambientes](./versionamiento/ENVIRONMENTS.md)
-2. Recomendaciones de estilo de código
+2. Lineamientos para la documentación
+	* Lineamientos para la documentación del código
+	* Lineamientos para el desarrollo de manuales
+3. Recomendaciones de estilo de código
