@@ -24,6 +24,8 @@ Administrador y principal responsable del repositorio. En su función como líde
 ### Líder funcionalidad
 Usuario dueño de la aplicación, es la persona que solicita el desarrollo o mejoras, y quien realiza la validación del desarrollo por medio de **pruebas de aceptación**.
 
+---
+
 ## Ramas
 
 Las ramas para todos los proyectos son:
@@ -46,6 +48,7 @@ La rama master es la rama principal del repositorio. Esta es la rama que alberga
 * La mezcla de cambios está limitada por la función de Pull request, no se permiten merge.
 
 Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
+
 **_Paso 1_**
 ![Reglas](../img/rules_1.PNG "Agregando reglas paso 1")
 **_Paso 2_**
@@ -134,7 +137,7 @@ git pull origin <<Código del feature>>-feature
 ![Develop branch](../img/develop_branch.PNG "Mezclando a desarrollo")
 Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature. Para ello se realizan los siguientes pasos:
   * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester.
-  * El tester despliega el código del pull request para validar los escenarios de calidad
+  * El tester despliega el código del pull request para validar los escenarios de calidad. [Pruebas de pull request](https://help.github.com/en/articles/checking-out-pull-requests-locally)
   * El tester aprueba o desaprueba el pull request
   * Los pull requests se aprueban y desaprueban en el orden que se han colocado
   * Si el tester aprueba el feature la rama que corresponde debe ser eliminada
@@ -154,7 +157,8 @@ Al cumplir con todas las pruebas el código es aprobado para ser mezclado en mas
   * El mantainer crea un release de código siguiendo la nomenclatura descrita en ______
   * Se comunica al equipo de desarrollo que ha sido creada una nueva versión de la aplicación
   * Se asegura que staging y master han quedado igualadas
-  * Se organiza con el equipo de deployers los pasos para la puesta en producción
+  * Se organiza con el equipo de despliegue (deployers) los pasos para la puesta en producción
+  * El equipo de despliegue despliega la nueva versión en producción
   * Se inicia un nuevo desarrollo
 
 ### 7. **Atención de errores en desarrollo**
