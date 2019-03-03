@@ -44,8 +44,8 @@ La rama master es la rama principal del repositorio. Esta es la rama que alberga
 * El código no debe tener problemas de integración, compilación ni ejecución
 * El código debe haber sido probado por el tester y líder funcional (usuario que solicitó la solución)
 * Solo el mantainer puede mezclar cambios a esta rama
-* El versionamiento se realiza haciendo uso de la nomenclatura _____
-* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge.
+* El versionamiento se realiza haciendo uso de [versionamiento semántico](VERSIONING.md)
+* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
 
 Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
 
@@ -60,7 +60,7 @@ La rama de staging o pre-productiva es la rama utilizada para preparar el releas
 * El código debe haber sido probado por el tester
 * Solo el tester puede mezclar cambios de código a esta rama.
 * El desarrollador puede agregar cambios a la rama que no sean de archivos de código
-* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge.
+* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
 * En la rama se trabaja una versión de la aplicación a la vez, al pasar a producción la rama debe quedar identica a master. No se deben trabajar en dos versiones de la aplicación a la vez.
 * Es una rama que se crea directamente de master
 
@@ -136,7 +136,7 @@ git pull origin <<Código del feature>>-feature
 ### 4. **Pruebas de sistema nivel 0**
 ![Develop branch](../img/develop_branch.PNG "Mezclando a desarrollo")
 Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature. Para ello se realizan los siguientes pasos:
-  * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester.
+  * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
   * El tester despliega el código del pull request para validar los escenarios de calidad. [Pruebas de pull request](https://help.github.com/en/articles/checking-out-pull-requests-locally)
   * El tester aprueba o desaprueba el pull request
   * Los pull requests se aprueban y desaprueban en el orden que se han colocado
@@ -148,13 +148,13 @@ Las pruebas de aceptación son realizadas por el usuario que ha solicitado el si
   * El tester comunica al equipo de despliegue (deployer) el despliegue del código en la rama de staging sobre el servidor pre-productivo
   * El tester comunica a las áreas que el desarrollo puede ser sometido a pruebas de aceptación, carga o seguridad sobre el ambiente pre-productivo a las áreas correspondientes.
   * Posterior a las pruebas se comunica los escenarios de calidad y pruebas que aprobaron o no
-  * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester crea un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo.
+  * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester crea un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
 
 ### 6. **Despliegue en producción**
 ![Master branch](../img/master_branch.PNG "Mezclando a master")
 Al cumplir con todas las pruebas el código es aprobado para ser mezclado en master generando una nueva versión de la aplicación. **Nota:** toda mezcla de código en master debe generar una nueva versión de la aplicación. Los pasos a seguir son:
   * El pull request es aprobado y mezclado a master
-  * El mantainer crea un release de código siguiendo la nomenclatura descrita en ______
+  * El mantainer crea un release de código siguiendo el [versionamiento semántico](VERSIONING.md)
   * Se comunica al equipo de desarrollo que ha sido creada una nueva versión de la aplicación
   * Se asegura que staging y master han quedado igualadas
   * Se organiza con el equipo de despliegue (deployers) los pasos para la puesta en producción
@@ -175,8 +175,8 @@ Cuando se presenta un error en producción y se considera que el error es bloque
   * Determinar la gravedad del issue en producción en conjunto con el líder funcional
   * Si se considera que no es crítico, bloqueante y puede esperar a un nuevo release, se crea una nueva rama de issue y se trabaja como en el paso 3 y 4.
   * Si se considera que no puede esperar a un nuevo release de la aplicación, se crea una rama hotfix a partir de master.
-  * Cuando se resuelve el error, se crea un pull request a master el cual requiere aprobación del tester del equipo y del mantainer.
-  * Se crea un nuevo release haciendo uso de la nomenclatura _____
+  * Cuando se resuelve el error, se crea un pull request a master el cual requiere aprobación del tester del equipo y del mantainer. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
+  * Se crea un nuevo release haciendo uso del [versionamiento semántico](VERSIONING.md)
   * El cambio debe ser mezclado al tiempo sobre la rama de develop, esta mezcla se puede realizar con merge.
   * Al finalizar se elimina la rama de hotfix
 
@@ -185,4 +185,4 @@ Si se presenta que una versión de la aplicación en productivo presenta una fal
   * Asegurarse que los problemas presentados no son replicables en el release anterior de la aplicación.
   * Marcar en github que el último release ahora es un pre-release, es decir, que no es un release productivo.
   * Desplegar la versión anterior de la aplicación
-  * Tener en cuarentena la versión anterior hasta determinar las causas y definir si generar un nuevo release con la misma versión o es una diferente.
+  * Comentar que la versión no se considera estable, y al publicar una nueva versión esta debe ser diferente, nunca la misma.

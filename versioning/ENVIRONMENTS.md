@@ -34,12 +34,14 @@ Este ambiente es el de producción de la aplicación. Las reglas de este ambient
 ## Ramas y Ambientes
 La correspondencia entre ambientes y ramas es la siguiente:
 
+![Branches and environments](../img/branches_envs.PNG "Ramas y ambientes")
+
 | Ambiente      | Ramas permitidas |
 | ------------- |:----------------:|
 | Desarrollo    | Issues, Features, develop |
 | Pruebas       | Develop (usando las versión del pull request )|
-| Staging | Staging, Hotfix (si se ve necesario)|
-| Productivo | Master|
+| Staging       | Staging, Hotfix (si se ve necesario)|
+| Productivo    | Master|
 
 Es responsabilidad del equipo en su totalidad el correcto uso de los ambientes y las ramas asociadas a cada uno.
 
