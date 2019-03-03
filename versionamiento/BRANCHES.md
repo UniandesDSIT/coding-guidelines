@@ -46,9 +46,9 @@ La rama master es la rama principal del repositorio. Esta es la rama que alberga
 * La mezcla de cambios está limitada por la función de Pull request, no se permiten merge.
 
 Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
-<dt> Paso 1 <dt>
+**_Paso 1_**
 ![Reglas](../img/rules_1.PNG "Agregando reglas paso 1")
-<dt> Paso 2 <dt>
+**_Paso 2_**
 ![Reglas](../img/rules_2.PNG "Agregando reglas paso 2")
 
 ### staging
