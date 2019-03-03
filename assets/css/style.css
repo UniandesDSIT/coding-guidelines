@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+h1,h2,h3{
+  color:blue;
+}
+
+.wrapper{
+  width: 1000px;
+}
+
+.section{
+  width: 700px;
+}

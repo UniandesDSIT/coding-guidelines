@@ -34,7 +34,7 @@ Este ambiente es el de producción de la aplicación. Las reglas de este ambient
 ## Ramas y Ambientes
 La correspondencia entre ambientes y ramas es la siguiente:
 
-![Branches and environments](../img/branches_envs.PNG "Ramas y ambientes")
+![Branches and environments](../assets/img/branches_envs.PNG "Ramas y ambientes")
 
 | Ambiente      | Ramas permitidas |
 | ------------- |:----------------:|

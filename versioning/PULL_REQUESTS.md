@@ -1,4 +1,4 @@
-#¿Cómo Puedo Contribuir?
+# ¿Cómo Puedo Contribuir?
 
 > Tomados parcialmente de [Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 
@@ -12,7 +12,7 @@
 * Documente código nuevo basado en la [Guía de Estilo de Documentación](#guía-de-estilo-de-documentación)
 * Termine todos los archivos con un newline.
 
-![Git Workflow](../img/git-flow-infographics.png)
+![Git Workflow](../assets/img/git-flow-infographics.png)
 
 ## Sugiriendo Mejoras
 

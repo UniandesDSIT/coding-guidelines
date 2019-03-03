@@ -36,7 +36,7 @@ Las ramas para todos los proyectos son:
 * hotfix
 * feature
 * issue
-![Ramas](../img/branches.PNG "Ramas")
+![Ramas](../assets/img/branches.PNG "Ramas")
 
 
 ### master
@@ -50,9 +50,9 @@ La rama master es la rama principal del repositorio. Esta es la rama que alberga
 Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
 
 **_Paso 1_**
-![Reglas](../img/rules_1.PNG "Agregando reglas paso 1")
+![Reglas](../assets/img/rules_1.PNG "Agregando reglas paso 1")
 **_Paso 2_**
-![Reglas](../img/rules_2.PNG "Agregando reglas paso 2")
+![Reglas](../assets/img/rules_2.PNG "Agregando reglas paso 2")
 
 ### staging
 La rama de staging o pre-productiva es la rama utilizada para preparar el release de entrega y realizar las pruebas de aceptación. Sobre esta rama el desarrollador realiza las tareas pre-release como son documentación, agregar información de configuración, y cualquier tarea adicional que no es específica del desarrollo. Al tiempo, es la rama en la cual se ejecutan pruebas de aceptación del líder funcional o usuario final. Esta rama tiene las siguientes reglas:
@@ -105,7 +105,7 @@ El Gitflow propuesto ha sido diseñado para garantizar la calidad de los product
 Al crear el repositorio, la rama master debe albergar el código suficiente (código base) que permita a todos los desarrolladores poder trabajar sin depender unos de otros.
 
 ### 2. **Creación de ramas**
-![Primeras ramas](../img/first_branches.PNG "Creando primeras ramas")
+![Primeras ramas](../assets/img/first_branches.PNG "Creando primeras ramas")
 Se crean las ramas siguiendo el orden:
   * staging desde master
   * develop desde Staging
@@ -113,7 +113,7 @@ Se crean las ramas siguiendo el orden:
 
 
 ### 3. **Desarrollo de funcionalidades**
-![Features branches](../img/feature_branches.PNG "Desarrollando en features")
+![Features branches](../assets/img/feature_branches.PNG "Desarrollando en features")
 Un developer o grupo de developers trabajan sobre una rama de features y pueden subir su desarrollo cuando esté finalizado (no antes) siguiendo estos pasos:
 ```
 # Realizar estos pasos continuamente permitirán una integración continua del desarrollo
@@ -134,7 +134,7 @@ git pull origin <<Código del feature>>-feature
 ```
 
 ### 4. **Pruebas de sistema nivel 0**
-![Develop branch](../img/develop_branch.PNG "Mezclando a desarrollo")
+![Develop branch](../assets/img/develop_branch.PNG "Mezclando a desarrollo")
 Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature. Para ello se realizan los siguientes pasos:
   * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
   * El tester despliega el código del pull request para validar los escenarios de calidad. [Pruebas de pull request](https://help.github.com/en/articles/checking-out-pull-requests-locally)
@@ -143,7 +143,7 @@ Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al de
   * Si el tester aprueba el feature la rama que corresponde debe ser eliminada
 
 ### 5. **Pruebas de aceptación, carga, y seguridad**
-![Staging branch](../img/staging_branch.PNG "Mezclando a staging")
+![Staging branch](../assets/img/staging_branch.PNG "Mezclando a staging")
 Las pruebas de aceptación son realizadas por el usuario que ha solicitado el sistema para probar que la aplicación cumple con lo deseado previo al despliegue en productivo. Las pruebas de carga y seguridad, son pruebas técnicas realizadas para validar que el sistema cumple con los atributos de calidad que se esperan, tales como desempeño y seguridad. Para ello se realizan los siguientes pasos:
   * El tester comunica al equipo de despliegue (deployer) el despliegue del código en la rama de staging sobre el servidor pre-productivo
   * El tester comunica a las áreas que el desarrollo puede ser sometido a pruebas de aceptación, carga o seguridad sobre el ambiente pre-productivo a las áreas correspondientes.
@@ -151,7 +151,7 @@ Las pruebas de aceptación son realizadas por el usuario que ha solicitado el si
   * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester crea un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
 
 ### 6. **Despliegue en producción**
-![Master branch](../img/master_branch.PNG "Mezclando a master")
+![Master branch](../assets/img/master_branch.PNG "Mezclando a master")
 Al cumplir con todas las pruebas el código es aprobado para ser mezclado en master generando una nueva versión de la aplicación. **Nota:** toda mezcla de código en master debe generar una nueva versión de la aplicación. Los pasos a seguir son:
   * El pull request es aprobado y mezclado a master
   * El mantainer crea un release de código siguiendo el [versionamiento semántico](VERSIONING.md)
@@ -162,7 +162,7 @@ Al cumplir con todas las pruebas el código es aprobado para ser mezclado en mas
   * Se inicia un nuevo desarrollo
 
 ### 7. **Atención de errores en desarrollo**
-![Issue branch](../img/issue_branches.PNG "Corrigiendo errores de desarrollo")
+![Issue branch](../assets/img/issue_branches.PNG "Corrigiendo errores de desarrollo")
 Cuando se presenta un error en desarrollo, el error debe ser resuelto sobre la feature que incluyó el error. Si la rama aún está presente es necesario hacer un rollback a un punto de estabilidad del código de lo contrario es necesario hacer una rama para atender el issue y resolverlo pronto. Los pasos a seguir son:
   * Se reporta que hay un issue en desarrollo por medio del tablero de issues y se asigna al desarrollador y al mantainer.
   * Si el error es por un feature que acabo de ser incluido y para el cual la rama aún existe, se hace rollback al cambio y soluciona en dicha rama. Mezclar los cambios con develop siguiendo los pasos 3 y 4.
@@ -170,7 +170,7 @@ Cuando se presenta un error en desarrollo, el error debe ser resuelto sobre la f
   * Si el error ya ha sido resuelto y probado se elimina la rama de issue.
 
 ### 8. **Atención de errores en producción**
-![Hotfix branch](../img/hotfix_branches.PNG "Corrigiendo errores en productivo")
+![Hotfix branch](../assets/img/hotfix_branches.PNG "Corrigiendo errores en productivo")
 Cuando se presenta un error en producción y se considera que el error es bloqueante, crítico o que no puede esperar a una nueva versión de código se debe manejar con una rama de hotfix. Sino es así se debe manejar con una rama de issue. Los pasos a seguir son:
   * Determinar la gravedad del issue en producción en conjunto con el líder funcional
   * Si se considera que no es crítico, bloqueante y puede esperar a un nuevo release, se crea una nueva rama de issue y se trabaja como en el paso 3 y 4.

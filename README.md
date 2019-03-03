@@ -20,4 +20,5 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 <!--- (2. Lineamientos para la documentación
 	* Lineamientos para la documentación del código
 	* Lineamientos para el desarrollo de manuales) -->
-2. [Recomendaciones de estilo de código](./style/STYLE_GUIDE.md)
+2. Lineamientos para codificación y documentación
+	* [Recomendaciones de estilo de código](./style/STYLE_GUIDE.md)
