@@ -7,6 +7,7 @@ En este capítulo se explica como se realiza el manejo de las ramas para los pro
 * Tester
 * Deployer
 * Mantainer
+* Líder funcional
 
 ### Developer
 Encargado del desarrollo de código al igual que las pruebas unitarias. Es responsable de aplicar **buenas prácticas de desarrollo**, desarrollar **pruebas unitarias** y garantizar que su código pueda ser integrado con el desarrollo de los demás miembros del equipo.
@@ -20,6 +21,9 @@ Encargado del despliegue del código en fase de staging (pre-productivo) y produ
 ### Mantainer
 Administrador y principal responsable del repositorio. En su función como líder técnico en el proyecto tiene la responsabilidad de garatizar que el gitflow se está siguiendo correctamente. Además es el usuario que da la aprobación para el paso de cambios a la rama master del desarrollo.
 
+### Líder funcionalidad
+Usuario dueño de la aplicación, es la persona que solicita el desarrollo o mejoras, y quien realiza la validación del desarrollo por medio de **pruebas de aceptación**.
+
 ## Ramas
 
 Las ramas para todos los proyectos son:
@@ -30,7 +34,8 @@ Las ramas para todos los proyectos son:
 * hotfix
 * feature
 * issue
-<<TODO ramas picture>>>
+![Ramas](../img/branches.PNG "Ramas")
+
 
 ### master
 La rama master es la rama principal del repositorio. Esta es la rama que alberga el código que será desplegado en producción y sobre el que se maneja el versionamiento de la aplicación. Esta rama tiene las siguientes reglas:
@@ -133,7 +138,7 @@ Las pruebas de aceptación son realizadas por el usuario que ha solicitado el si
   * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester crea un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo.
 
 ### 6. **Despliegue en producción**
-Al cumplir con todas las pruebas el código es aprobado para ser mezclado en master generando una nueva versión de la aplicación. Nota: toda mezcla de código en master debe generar una nueva versión de la aplicación. Los pasos a seguir son:
+Al cumplir con todas las pruebas el código es aprobado para ser mezclado en master generando una nueva versión de la aplicación. **Nota:** toda mezcla de código en master debe generar una nueva versión de la aplicación. Los pasos a seguir son:
   * El pull request es aprobado y mezclado a master
   * El mantainer crea un release de código siguiendo la nomenclatura descrita en ______
   * Se comunica al equipo de desarrollo que ha sido creada una nueva versión de la aplicación
@@ -142,7 +147,25 @@ Al cumplir con todas las pruebas el código es aprobado para ser mezclado en mas
   * Se inicia un nuevo desarrollo
 
 ### 7. **Atención de errores en desarrollo**
+Cuando se presenta un error en desarrollo, el error debe ser resuelto sobre la feature que incluyó el error. Si la rama aún está presente es necesario hacer un rollback a un punto de estabilidad del código de lo contrario es necesario hacer una rama para atender el issue y resolverlo pronto. Los pasos a seguir son:
+  * Se reporta que hay un issue en desarrollo por medio del tablero de issues y se asigna al desarrollador y al mantainer.
+  * Si el error es por un feature que acabo de ser incluido y para el cual la rama aún existe, se hace rollback al cambio y soluciona en dicha rama. Mezclar los cambios con develop siguiendo los pasos 3 y 4.
+  * Si el error es por un feature agregado previamente y para el cual su rama ya fue cerrada, se crea una rama de issue y se asigna al desarrollador correspondiente. Este desarrollo sigue igualmente los pasos 3 y 4.
+  * Si el error ya ha sido resuelto y probado se elimina la rama de issue.
 
 ### 8. **Atención de errores en producción**
+Cuando se presenta un error en producción y se considera que el error es bloqueante, crítico o que no puede esperar a una nueva versión de código se debe manejar con una rama de hotfix. Sino es así se debe manejar con una rama de issue. Los pasos a seguir son:
+  * Determinar la gravedad del issue en producción en conjunto con el líder funcional
+  * Si se considera que no es crítico, bloqueante y puede esperar a un nuevo release, se crea una nueva rama de issue y se trabaja como en el paso 3 y 4.
+  * Si se considera que no puede esperar a un nuevo release de la aplicación, se crea una rama hotfix a partir de master.
+  * Cuando se resuelve el error, se crea un pull request a master el cual requiere aprobación del tester del equipo y del mantainer.
+  * Se crea un nuevo release haciendo uso de la nomenclatura _____
+  * El cambio debe ser mezclado al tiempo sobre la rama de develop, esta mezcla se puede realizar con merge.
+  * Al finalizar se elimina la rama de hotfix
 
 ### 9. **Rollback de versiones**
+Si se presenta que una versión de la aplicación en productivo presenta una falla de estabilidad del producto, es potestad del equipo (desarrollo, operaciones, líder funcional) definir si volver a un estado anterior de la aplicación para ello el equipo debe:
+  * Asegurarse que los problemas presentados no son replicables en el release anterior de la aplicación.
+  * Marcar en github que el último release ahora es un pre-release, es decir, que no es un release productivo.
+  * Desplegar la versión anterior de la aplicación
+  * Tener en cuarentena la versión anterior hasta determinar las causas y definir si generar un nuevo release con la misma versión o es una diferente.
