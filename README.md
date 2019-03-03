@@ -13,10 +13,10 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 ## Contenido
 
 1. Lineamientos para el versionamiento de código
-	* [Manejo de ramas](./versionamiento/BRANCHES.md)
-	* [Uso de ambientes](./versionamiento/ENVIRONMENTS.md)
-	* [Nombramiento de versiones](./versionamiento/VERSIONING.md)
-	* [Como contribuir](./versionamiento/PULL_REQUESTS.md)
+	* [Manejo de ramas](./versioning/BRANCHES.md)
+	* [Uso de ambientes](./versioning/ENVIRONMENTS.md)
+	* [Nombramiento de versiones](./versioning/VERSIONING.md)
+	* [Como contribuir](./versioning/PULL_REQUESTS.md)
 <!--- (2. Lineamientos para la documentación
 	* Lineamientos para la documentación del código
 	* Lineamientos para el desarrollo de manuales) -->
