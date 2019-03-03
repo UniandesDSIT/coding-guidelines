@@ -8,9 +8,9 @@ h1,h2,h3{
 }
 
 .wrapper{
-  width: 1000px;
+  width: 1000px !important;
 }
 
 .section{
-  width: 700px;
+  width: 700px !important;
 }
