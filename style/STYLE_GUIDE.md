@@ -1,5 +1,7 @@
 # Guías de estilo
+
 > Tomados parcialmente de [Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+
 ## Mensajes de Commit de Git
 
 Así como la nomenclatura en código, los mensajes de commit deben escribirse en inglés, para poder facilitar que cualquier persona, independiente de su lengua materna pueda entender el historial de cambios, y asegurarse de que . Los lineamientos de estilo son los siguientes:
