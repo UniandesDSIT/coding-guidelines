@@ -57,6 +57,7 @@ Todo código en este repositorio debe ser documentado a dos niveles.
 	* Use la wiki para documentar todo aquello adicional que otros desarrolladores deben saber del desarrollo para poder ejecutarlo y continuar con el.
 
 Si se considera necesario, la documentación autogenerada de código (dependiendo el framework) puede ser presentada en el repositorio. Para esto usted debe solicitar la aprobación de dejar pública la documentación, si se considera necesario usted debe:
-	* Crear una rama que tendrá solo la documentación. Esta rama debe ser protegida para que no sea mezclada con las demás. 
-	* Crear una página web haciendo uso de la característica de github para este fin, y apuntando a la rama de documentación.
-	* Seleccione la plantilla y modifíquela para que integre la documentación autogenerada o los archivos .md que usted requiera para documentar su código.
+	
+* Crear una rama que tendrá solo la documentación. Esta rama debe ser protegida para que no sea mezclada con las demás. 
+* Crear una página web haciendo uso de la característica de github para este fin, y apuntando a la rama de documentación.
+* Seleccione la plantilla y modifíquela para que integre la documentación autogenerada o los archivos .md que usted requiera para documentar su código.
