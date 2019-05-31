@@ -35,9 +35,9 @@ Los lineamientos de estilo son los siguientes:
 * Cuando cambie documentación únicamente, incluya en el título del commit las palabras `[ci skip]`. Esto con el fin de no integrar continuamente este cambio.
 
 Por lo tanto, un buen nombramiento del commit sería de la manera:
-´´´
+```
 git commit -m ":bug: IS-S1-030: Fix bug in class Student"
-´´´
+```
 
 ## Documentación de código
 
