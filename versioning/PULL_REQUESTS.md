@@ -4,12 +4,14 @@
 
 ## Pull Requests
 
-* Llene [la plantilla requerida](PULL_REQUEST_TEMPLATE.md)
+Todo cambio entre ramas debe seguir el manejo de pull requests como se indica en la sección de Ramas. Tenga presente las siguientes recomendaciones en el momento de crear un pull request.
+
+* Llene [la plantilla requerida](./PULL_REQUEST_TEMPLATE.md)
 * No incluya números de issues en el título del PR
 * Incluya screenshots y GIFs animados en su pull request cuando sea posible.
 * Siga las guías de estilo.
 * Incluya todos los tests necesarios.
-* Documente código nuevo basado en la [Guía de Estilo de Documentación](#guía-de-estilo-de-documentación)
+* Documente código nuevo basado en la [Guía de Estilo de Documentación](../style/COMMITS_DOCUMENTATION.md)
 * Termine todos los archivos con un newline.
 
 ![Git Workflow](../assets/img/git-flow-infographics.png)

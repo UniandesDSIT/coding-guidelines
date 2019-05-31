@@ -138,9 +138,9 @@ git pull origin <<Código del feature>>-feature
 Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature. Para ello se realizan los siguientes pasos:
   * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
   * El tester despliega el código del pull request para validar los escenarios de calidad. [Pruebas de pull request](https://help.github.com/en/articles/checking-out-pull-requests-locally)
-  * El tester aprueba o desaprueba el pull request
+  * El tester aprueba o desaprueba el pull request. Esta tarea siempre debe ir con un comentario del QA en el pull request.
   * Los pull requests se aprueban y desaprueban en el orden que se han colocado
-  * Si el tester aprueba el feature la rama que corresponde debe ser eliminada
+  * Si el tester aprueba el pull request que proviene de una rama feature, esta rama debe ser eliminada
 
 ### 5. **Pruebas de aceptación, carga, y seguridad**
 ![Staging branch](../assets/img/staging_branch.PNG "Mezclando a staging")
