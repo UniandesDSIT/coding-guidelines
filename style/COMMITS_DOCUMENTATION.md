@@ -26,7 +26,7 @@ Los lineamientos de estilo son los siguientes:
     * :arrow_up: `:arrow_up:` cuando actualice dependencias
     * :arrow_down: `:arrow_down:` cuando desactualice dependencias
     * :shirt: `:shirt:` cuando elimine advertencias del linter
-* Continue por el código de la historia de usuario o issue al cual está aportando el desarrollo. El formato es de la forma <HU/IS>-<ID FASE PROYECTO>-<NÚMERO HISTORIA> Por ejemplo:
+* Continue por el código de la historia de usuario o issue al cual está aportando el desarrollo. El formato es de la forma `<HU/IS>-<ID FASE PROYECTO>-<NÚMERO HISTORIA>` Por ejemplo:
 	* HU-S1-001
 * Haga uso del _present tense_ (_"Add feature"_, no _"Added feature"_)
 * Haga uso del _imperative mood_ (_"Move cursor to..."_, no _"Moves cursor to..."_)
@@ -56,8 +56,12 @@ Todo código en este repositorio debe ser documentado a dos niveles.
 		* Refiérase a los métodos de clase con `{ClassName.methodName}`
 	* Use la wiki para documentar todo aquello adicional que otros desarrolladores deben saber del desarrollo para poder ejecutarlo y continuar con el.
 
-Si se considera necesario, la documentación autogenerada de código (dependiendo el framework) puede ser presentada en el repositorio. Para esto usted debe solicitar la aprobación de dejar pública la documentación, si se considera necesario usted debe:
+Si se considera necesario, la documentación autogenerada de código (dependiendo el framework) puede ser presentada en el repositorio, para esto usted debe:
 	
-* Crear una rama que tendrá solo la documentación. Esta rama debe ser protegida para que no sea mezclada con las demás. 
+* Crear una rama que tendrá solo la documentación. Esta rama debe ser protegida para que no sea mezclada con las demás.
+* Agregar en la wiki el link a la rama en la cual se encuentra la documentación.
+
+En caso que se considere dejar pública la documentación. Se debe solicitar la aprobación del CedEx que gestiona el repositorio de código, si la DSIT considera que es viable su publicación usted debe:
+
 * Crear una página web haciendo uso de la característica de github para este fin, y apuntando a la rama de documentación.
-* Seleccione la plantilla y modifíquela para que integre la documentación autogenerada o los archivos .md que usted requiera para documentar su código.
+* Seleccione la plantilla y modifíquela para que integre la documentación autogenerada y/o los archivos .md que usted requiera para documentar su código. Tome el ejemplo de la forma en que está creada esta documentación.
