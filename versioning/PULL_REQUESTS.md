@@ -14,10 +14,10 @@ Todo cambio entre ramas debe seguir el manejo de pull requests como se indica en
 * Documente código nuevo basado en la [Guía de Estilo de Documentación](../style/COMMITS_DOCUMENTATION.md)
 * Termine todos los archivos con un newline.
 
-NOTA: Todo Pull Request en sus comentarios debe contener:
-	1. un link al documento o fuente de información donde está alojado el listado con descripción de todas las historias de usuario por las que se está haciendo el desarrollo.
-	2. el listado paso a paso de la configuración que es necesaria en la aplicación para que los cambios surtan efecto. Este paso es opcional
-	3. una certificación de las pruebas realizadas por parte del QA (Tester)
+**NOTA:** Todo Pull Request en sus comentarios debe contener:
+* un link al documento o fuente de información donde está alojado el listado con descripción de todas las historias de usuario por las que se está haciendo el desarrollo.
+* el listado paso a paso de la configuración que es necesaria en la aplicación para que los cambios surtan efecto. Este paso es opcional
+* una certificación de las pruebas realizadas por parte del QA (Tester)
 
 ![Git Workflow](../assets/img/git-flow-infographics.png)
 
