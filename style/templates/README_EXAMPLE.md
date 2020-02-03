@@ -15,8 +15,9 @@ Debe tener instaladas en su máquina las siguientes herramientas:
 ## 3. Instalación
 
 Desde el directorio /lib ejecutar el siguiente comando 
-
+```
 	mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2.0 -Dpackaging=jar
+```
 
 ## 4. Como utilizar
 
@@ -25,12 +26,12 @@ Utilizando Eclipse ...
 	maven -> Update project
 	
 Para compilar el proyecto utilizar el siguiente comando maven:
-
+```
     mvn clean install -DskipTests
-
+```
 ## 5. Wiki
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Link a la wiki
 
 ## 6. Contribuyentes
 
