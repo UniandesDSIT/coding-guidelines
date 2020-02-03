@@ -65,3 +65,12 @@ En caso que se considere dejar pública la documentación. Se debe solicitar la 
 
 * Crear una página web haciendo uso de la característica de github para este fin, y apuntando a la rama de documentación.
 * Seleccione la plantilla y modifíquela para que integre la documentación autogenerada y/o los archivos .md que usted requiera para documentar su código. Tome el ejemplo de la forma en que está creada esta documentación.
+
+3. Documentación a entregar
+
+Todo desarrollo de la DSIT debe ser entregado con al menos los siguientes documentos:
+
+* Documento técnico de la solución donde se indica: arquitectura del software, stack tecnológico, repositorios, herramientas y demás componentes relevantes en el desarrollo. 
+* Documento de dependencias donde se indica cada una de las librerías, frameworks e integraciones que se estén usando en la solución. Es importante contar con datos específicos como links de cada elemento, versión, descripción y razón de usarlo.
+* Documento de despliegue: documento donde se indica el paso a paso para ejecutar la solución.
+* Documento de configuración: documento donde se indica las configuraciones que se deben tener en cuenta para el correcto funcionmiento de la aplicación.

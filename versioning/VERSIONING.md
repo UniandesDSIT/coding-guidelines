@@ -1,6 +1,6 @@
 # Guía sobre Versionamiento
 
-Para los productos de software almacenados en esta organización se recomienda utilizar Versionamiento Semántico, tal como está definida en https://semver.org/lang/es/. El documento que se presenta a continuación es una versión con ciertos cambios para el contexto de nuestra organización. Los cambios serán declarados haciendo uso de _letra itálica_.
+Para los productos de software almacenados en esta organización se recomienda utilizar Versionamiento Semántico, tal como está definida en [https://semver.org/lang/es](https://semver.org/lang/es/)- El documento que se presenta a continuación es una versión con ciertos cambios para el contexto de nuestra organización. Los cambios serán declarados haciendo uso de _letra itálica_.
 
 ---
 

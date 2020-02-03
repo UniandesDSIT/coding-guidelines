@@ -45,7 +45,7 @@ La rama master es la rama principal del repositorio. Esta es la rama que alberga
 * El código debe haber sido probado por el tester y líder funcional (usuario que solicitó la solución)
 * Solo el mantainer puede mezclar cambios a esta rama
 * El versionamiento se realiza haciendo uso de [versionamiento semántico](VERSIONING.md)
-* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
+* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](../style/PULL_REQUESTS.md)
 
 Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
 
@@ -58,9 +58,9 @@ Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, 
 La rama de staging o pre-productiva es la rama utilizada para preparar el release de entrega y realizar las pruebas de aceptación. Sobre esta rama el desarrollador realiza las tareas pre-release como son documentación, agregar información de configuración, y cualquier tarea adicional que no es específica del desarrollo. Al tiempo, es la rama en la cual se ejecutan pruebas de aceptación del líder funcional o usuario final. Esta rama tiene las siguientes reglas:
 * El código no debe tener problemas de integración, compilación ni ejecución
 * El código debe haber sido probado por el tester
-* Solo el tester puede mezclar cambios de código a esta rama.
+* El tester debe aprobar la mezcla de cambios de código a esta rama.
 * El desarrollador puede agregar cambios a la rama que no sean de archivos de código
-* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
+* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](../style/PULL_REQUESTS.md)
 * En la rama se trabaja una versión de la aplicación a la vez, al pasar a producción la rama debe quedar identica a master. No se deben trabajar en dos versiones de la aplicación a la vez.
 * Es una rama que se crea directamente de master
 
@@ -81,12 +81,12 @@ Las ramas de feature son ramas de caracter temporal que están destinadas para a
 * Para evitar conflictos sobre la rama de develop, todos los conflictos deben ser resueltos sobre estas ramas.
 
 ### hotfix
-Las ramas de hotfix son ramas de caracter temporal que se crean para la atención de un error crítico en la aplicación, que no puede esperar al despliegue de una nuevo release. Estas ramas tienen las siguientes reglas:
+Las ramas de hotfix son ramas de caracter temporal que se crean para la atención de un error crítico en la aplicación cuando está en producción y que no puede esperar al despliegue de un nuevo release. Estas ramas tienen las siguientes reglas:
 * Se crean directamente de master
 * Su propósito es almacenar el código para la solución de un error en productivo
 * Se nombran de la manera **<<Código del bug>>-hotfix**
 * Al finalizar el desarrollo y posterior a la aprobación del tester, la rama debe eliminarse
-* Esta rama debe mezclar sus cambios a la rama master y a la rama developer
+* Esta rama debe mezclar sus cambios a la rama master y a la rama develop
 
 ### issue
 Las ramas de issues son ramas de caracter temporal que se crean para la atención de un error en el código de desarrollo. Estos issues son detectados en staging o develop por la integración de un feature y son trabajados en una rama aparte si la rama feature correspondiente ya fue eliminada. Estas ramas tienen las siguientes reglas:
@@ -114,7 +114,7 @@ Se crean las ramas siguiendo el orden:
 
 ### 3. **Desarrollo de funcionalidades**
 ![Features branches](../assets/img/feature_branches.PNG "Desarrollando en features")
-Un developer o grupo de developers trabajan sobre una rama de features y pueden subir su desarrollo cuando esté finalizado (no antes) siguiendo estos pasos:
+Un developer o grupo de developers trabajan sobre una rama de feature, la cual debe ser creada desde la rama de develop. Esta rama albergará el código del desarrollo de una funcionalidad y cuando esta sea finalizada (no antes) debe ser subida a develop siguiendo estos pasos:
 ```
 # Realizar estos pasos continuamente permitirán una integración continua del desarrollo
 git add .
@@ -133,22 +133,24 @@ git pull origin <<Código del feature>>-feature
 - Realizar merge o acceder a github y crear el pull request (recomendado)
 ```
 
-### 4. **Pruebas de sistema nivel 0**
+### 4. **Pruebas de sistema nivel 1**
 ![Develop branch](../assets/img/develop_branch.PNG "Mezclando a desarrollo")
-Las pruebas del sistema nivel 0 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature. Para ello se realizan los siguientes pasos:
-  * El desarrollador, posterior a la mezcla de código en develop, genera un pull request a staging y asigna para su revisión al tester. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
-  * El tester despliega el código del pull request para validar los escenarios de calidad. [Pruebas de pull request](https://help.github.com/en/articles/checking-out-pull-requests-locally)
-  * El tester aprueba o desaprueba el pull request. Esta tarea siempre debe ir con un comentario del QA en el pull request.
+Las pruebas del sistema nivel 1 son las pruebas que aplica el equipo de QA al desarrollo para comprobar que las funcionalidades cumplen con lo definido en los escenarios de pruebas. Estas pruebas son llevadas por el tester y se ejecutan al integrar el desarrollo de un feature en la rama develop. Para ello se realizan los siguientes pasos:
+  * El desarrollador, posterior a la mezcla de código en develop, genera un tag con el nombre del feature o issue y la fecha.
+  * El desarrollador genera un pull request a Staging, indica el tag que debe usar para probar y asigna para su revisión al tester. Para la creación de pull request revise [nuestras normas de estilo](../style/PULL_REQUESTS.md)
+  * El tester despliega el código del tag para validar los escenarios de calidad.
+  * El tester aprueba o desaprueba el pull request. Esta tarea siempre debe ir con un comentario del QA en el pull request. Para reportar issues sobre el producto revise [nuestras normas de estilo](../style/WRITE_BUG.md)
   * Los pull requests se aprueban y desaprueban en el orden que se han colocado
   * Si el tester aprueba el pull request que proviene de una rama feature, esta rama debe ser eliminada
 
 ### 5. **Pruebas de aceptación, carga, y seguridad**
 ![Staging branch](../assets/img/staging_branch.PNG "Mezclando a staging")
 Las pruebas de aceptación son realizadas por el usuario que ha solicitado el sistema para probar que la aplicación cumple con lo deseado previo al despliegue en productivo. Las pruebas de carga y seguridad, son pruebas técnicas realizadas para validar que el sistema cumple con los atributos de calidad que se esperan, tales como desempeño y seguridad. Para ello se realizan los siguientes pasos:
+  * El desarrollador genera un tag sobre la rama staging nombrándola con la fecha de las pruebas.
   * El tester comunica al equipo de despliegue (deployer) el despliegue del código en la rama de staging sobre el servidor pre-productivo
   * El tester comunica a las áreas que el desarrollo puede ser sometido a pruebas de aceptación, carga o seguridad sobre el ambiente pre-productivo a las áreas correspondientes.
   * Posterior a las pruebas se comunica los escenarios de calidad y pruebas que aprobaron o no
-  * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester crea un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo. Para la creación de pull request revise [nuestras normas de estilo](PULL_REQUESTS.md)
+  * Si el desarrollo ha sido finalizado completamente y las pruebas son satisfactorias, el tester o desarrollador crean un pull request a master solicitando la aprobación del mantainer y la revisión del equipo de desarrollo. Para la creación de pull request revise [nuestras normas de estilo](../style/PULL_REQUESTS.md)
 
 ### 6. **Despliegue en producción**
 ![Master branch](../assets/img/master_branch.PNG "Mezclando a master")
@@ -164,8 +166,8 @@ Al cumplir con todas las pruebas el código es aprobado para ser mezclado en mas
 ### 7. **Atención de errores en desarrollo**
 ![Issue branch](../assets/img/issue_branches.PNG "Corrigiendo errores de desarrollo")
 Cuando se presenta un error en desarrollo, el error debe ser resuelto sobre la feature que incluyó el error. Si la rama aún está presente es necesario hacer un rollback a un punto de estabilidad del código de lo contrario es necesario hacer una rama para atender el issue y resolverlo pronto. Los pasos a seguir son:
-  * Se reporta que hay un issue en desarrollo por medio del tablero de issues y se asigna al desarrollador y al mantainer.
-  * Si el error es por un feature que acabo de ser incluido y para el cual la rama aún existe, se hace rollback al cambio y soluciona en dicha rama. Mezclar los cambios con develop siguiendo los pasos 3 y 4.
+  * Se reporta que hay un issue en desarrollo por medio del tablero de issues y se asigna al desarrollador y al mantainer. Para reportar issues sobre el producto revise [nuestras normas de estilo](../style/WRITE_BUG.md)
+  * Si el error es por un feature que acabó de ser incluido y para el cual la rama aún existe, se hace rollback al cambio y soluciona en dicha rama. Mezclar los cambios con develop siguiendo los pasos 3 y 4.
   * Si el error es por un feature agregado previamente y para el cual su rama ya fue cerrada, se crea una rama de issue y se asigna al desarrollador correspondiente. Este desarrollo sigue igualmente los pasos 3 y 4.
   * Si el error ya ha sido resuelto y probado se elimina la rama de issue.
 
