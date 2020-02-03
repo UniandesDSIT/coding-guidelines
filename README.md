@@ -20,4 +20,4 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 	* [Guías de documentación y escritura de commits](./style/COMMITS_DOCUMENTATION.md)
 	* [Cómo debe ser el README](./style/ABOUT_README.md)
 	* [Cómo reportar un bug](./style/WRITE_BUG.md)	
-	* [Cómo debe ser un Pull request](./versioning/PULL_REQUESTS.md)
+	* [Cómo debe ser un Pull request](./style/PULL_REQUESTS.md)
