@@ -1,5 +1,3 @@
-
-
 # Nombre o titulo del proyecto
 
 ## 1. Resumen o Descripción
@@ -20,8 +18,6 @@ Desde el directorio /lib ejecutar el siguiente comando
 
 	mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2.0 -Dpackaging=jar
 
-
-
 ## 4. Como utilizar
 
 Utilizando Eclipse ...
@@ -31,7 +27,6 @@ Utilizando Eclipse ...
 Para compilar el proyecto utilizar el siguiente comando maven:
 
     mvn clean install -DskipTests
-
 
 ## 5. Wiki
 
@@ -63,6 +58,6 @@ Este proyecto aún está en fase de desarrollo, actualmente se está trabajando en 
 
 Este proyecto se encuentra en fase de soporte, actualmente no se están trabajando nuevos desarrollos sobre el mismo.
 
-**Nota: Este proyecto cumple con el estandar definido para la gestión de versionamiento del código definido por la DSIT. El cual se encuentra publicado en... ** 
+**Nota: Este proyecto cumple con el estandar definido para la gestión de versionamiento del código definido por la DSIT. El cual se encuentra publicado en...** 
 
 

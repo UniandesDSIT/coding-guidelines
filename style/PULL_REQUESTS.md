@@ -6,12 +6,12 @@
 
 Todo cambio entre ramas debe seguir el manejo de pull requests como se indica en la sección de Ramas. Tenga presente las siguientes recomendaciones en el momento de crear un pull request.
 
-* Llene [la plantilla requerida](https://github.com/atom/atom/blob/master/PULL_REQUEST_TEMPLATE.md)
+* Llene [la plantilla requerida](./templates/PULL_REQUEST_TEMPLATE.md)
 * No incluya números de issues en el título del PR
 * Incluya screenshots y GIFs animados en su pull request cuando sea posible.
 * Siga las guías de estilo.
 * Incluya todos los tests necesarios.
-* Documente código nuevo basado en la [Guía de Estilo de Documentación](COMMITS_DOCUMENTATION.md)
+* Documente código nuevo basado en la [Guía de Estilo de Documentación](COMMITS.md)
 * Termine todos los archivos con un newline.
 
 **NOTA:** Todo Pull Request en sus comentarios debe contener:

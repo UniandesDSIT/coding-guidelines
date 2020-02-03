@@ -17,7 +17,8 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 	* [Nombramiento de versiones](./versioning/VERSIONING.md)
 2. Lineamientos para codificación y documentación
 	* [Recomendaciones de estilo de código](./style/STYLE_GUIDE.md)
-	* [Guías de documentación y escritura de commits](./style/COMMITS_DOCUMENTATION.md)
+	* [Guías de documentación y escritura de commits](./style/COMMITS.md)
+	* [Sobre la documentación de proyectos](./style/DOCS.md)
 	* [Cómo debe ser el README](./style/ABOUT_README.md)
 	* [Cómo reportar un bug](./style/WRITE_BUG.md)	
 	* [Cómo debe ser un Pull request](./style/PULL_REQUESTS.md)

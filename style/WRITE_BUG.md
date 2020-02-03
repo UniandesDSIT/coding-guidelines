@@ -29,11 +29,11 @@ Coloque uno a uno los pasos para reproductir el bug. Sea detallado en cada uno y
 
 ### Then (Entonces):
 
-** Comportamiento observado:** Describa el resultado obtenido, adjunte imágenes que permitan observarlo mejor.
+* **Comportamiento observado:** Describa el resultado obtenido, adjunte imágenes que permitan observarlo mejor.
 
-** Comportamiento esperado:** Describa el comportamiento que esperaba el usuario, enlace esta parte con la descripción o diseños correspondientes.
+* **Comportamiento esperado:** Describa el comportamiento que esperaba el usuario, enlace esta punto la documentación o diseños correspondientes.
 
-### Template
+### Template)
 
 Use el siguiente template como base para reportar cualquier bug en los proyectos de este repositorio:
 
@@ -77,9 +77,9 @@ Si considera que debe ir alguna información adicional para guiar al desarrollad
 ```
 ## Sugiriendo Mejoras
 
-Esta seccion lo guiara para el envio de sugerencias de mejoras, incluyendo características completamente nuevas y mejoras menores a la funcionalidad existente. Seguir estas pautas ayuda a los desarrolladores y a la comunidad a entender su sugerencia :pencil: y a encontrar sugerencias relacionadas :mag_right:.
+Esta sección lo guiará para el envío de sugerencias de mejoras, incluyendo características completamente nuevas y mejoras menores a la funcionalidad existente. Seguir estas pautas ayuda a los desarrolladores y a la comunidad a entender su sugerencia :pencil: y a encontrar sugerencias relacionadas :mag_right:.
 
-Antes de crear sugerencias de mejora, por favor consulte [esta lista](#antes-de-enviar-una-sugerencia-de-mejora) ya que puede descubrir que no necesita crear una. Cuando usted esta creando una Sugerencia de Mejora, por favor [incluya la mayoría de detalles posibles](#cómo-presento-una-buena-sugerencia-de-mejora). complete [la plantilla](ISSUE_TEMPLATE.md), incluya los pasos que ud tomaria si la caracteristica que usted esta solicitando existiera.
+Antes de crear sugerencias de mejora, por favor consulte [esta lista](#antes-de-enviar-una-sugerencia-de-mejora) ya que puede descubrir que no necesita crear una. Cuando usted esta creando una Sugerencia de Mejora, por favor [incluya la mayoría de detalles posibles](#cómo-presento-una-buena-sugerencia-de-mejora). complete la [plantilla](#Template) de issues presentada antes, incluya los pasos que ud tomaria si la caracteristica que usted esta solicitando existiera.
 
 #### Antes de Enviar una Sugerencia de Mejora
 
