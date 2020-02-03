@@ -22,8 +22,9 @@ Desde el directorio /lib ejecutar el siguiente comando
 ## 4. Como utilizar
 
 Utilizando Eclipse ...
-	
-	maven -> Update project
+```
+    maven > Update project
+```
 	
 Para compilar el proyecto utilizar el siguiente comando maven:
 ```
