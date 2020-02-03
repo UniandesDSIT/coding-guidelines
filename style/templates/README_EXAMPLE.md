@@ -1,3 +1,4 @@
+
 # Nombre o titulo del proyecto
 
 ## 1. Resumen o Descripción
@@ -5,14 +6,14 @@ Proyecto de administración de notas de estudiantes de ...
 
 
 ## 2. Prerequisitos
-Debe tener instaladas en su máquina las siguientes herramientas: 
+Debe tener instaladas en su m?quina las siguientes herramientas: 
 
 - Java JDK 1.8 
 - Maven: https://maven.apache.org/download.cgi
 - Eclipse: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt
 
 
-## 3. Instalación
+## 3. Instalaci?n
 
 Desde el directorio /lib ejecutar el siguiente comando 
 ```
@@ -36,7 +37,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Link a la w
 
 ## 6. Contribuyentes
 
-Andrés Perez (usuario GitHub)
+Andres Perez (usuario GitHub)
 
 ## 7. Versión
 
@@ -49,7 +50,7 @@ Andres Perez (usuario GitHub)
 
 ## 9. Soporte
 
-Este software está soportado por el equipo de ... Si tienes algún inconveniente con el software puedes reportarlo en ....
+Este software esta soportado por el equipo de ... Si tienes algún inconveniente con el software puedes reportarlo en ....
 
 ## 10. Licencia
 Este proyecto está bajo la Licencia GPL, BSD, Software Propietario
@@ -60,6 +61,4 @@ Este proyecto aún está en fase de desarrollo, actualmente se está trabajando en 
 
 Este proyecto se encuentra en fase de soporte, actualmente no se están trabajando nuevos desarrollos sobre el mismo.
 
-**Nota: Este proyecto cumple con el estandar definido para la gestión de versionamiento del código definido por la DSIT. El cual se encuentra publicado en...** 
-
-
+**Nota: Este proyecto cumple con el estandar definido para la gestión de versionamiento del código definido por la DSIT. El cual se encuentra publicado en...**
