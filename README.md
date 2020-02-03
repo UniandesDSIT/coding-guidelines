@@ -1,4 +1,7 @@
 # Guía de Desarrollo de Software
+
+Versión: 1.2.0
+
 ## Objetivo
 
 El siguiente documento guía que contiende un conjunto de buenas prácticas y procedimientos diseñados para el desarrollo de nuevas soluciones lideradas por la [Dirección de Servicios de Información y Tecnología](https://tecnologia.uniandes.edu.co) de la [Universidad de los Andes](https://uniandes.edu.co) u otras áreas que desean construir soluciones que serán soportadas posteriormente por la DSIT. Estos son más que todo recomendaciones y guías, por lo tanto siéntase libre de proponer cambios para este documento en un pull request o comunicándote con el equipo de desarrollo.

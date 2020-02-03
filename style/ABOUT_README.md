@@ -17,4 +17,4 @@ Este documento es obligatorio para todos los repositorios de la DSIT, es respons
 * Información de licencia
 * Estado del proyecto
 
-Utilice el siguiente template para la creación de su README: [Template README](./docs/README-EXAMPLE.md)
+Utilice el siguiente template para la creación de su README: [Template README](./templates/README-EXAMPLE.md)
