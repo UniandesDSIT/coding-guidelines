@@ -3,14 +3,14 @@
 Esta seccion lo guia a traves del envio de errores. Seguir estas guias lo ayudan a que los desarrolladores y la comunidad entiendan su reporte :pencil:, reproduzca el comportamiento :computer: :computer:, y encuentre informes relacionados :mag_right:.
 Antes de crear un reporte de bugs, por favor revise [esta lista](#antes-de-sugerir-un-informe-de-error) como puede descubrir que no necesita uno. Cuando usted esta creando un reporte de bugs, por favor [incluya tantos detalles como sea posible](#cómo-presentar-un-buen-informe-de-error). Complete la lantilla definida, la informacion que esta pregunta ayuda a resolver los issues rapido.
 
-#### Antes de sugerir un informe de error
+## Antes de sugerir un informe de error
 
 * **Determine en qué repositorio debe informarse el problema**.
 * **Realice una [busqueda general](https://github.com/search?q=+is%3Aissue+user%3Auniandesdsit)** para ver si el problema ya ha sido reportado. Si lo ha sido **y el issue aún está abierto**, agregue un comentario al issue existente en lugar de abrir uno nuevo.
 
-#### ¿Cómo Presentar un (Buen) Informe de Error?
+## ¿Cómo Presentar un (Buen) Informe de Error?
 
-Los errores se registran y siguen como [GitHub issues](https://guides.github.com/features/issues/). Después de haber determinado en cuál repositorio está relacionado tu error, crea un issue en ese repositorio y provee la siguiente información llenando [esta plantilla](ISSUE_TEMPLATE.md).
+Los errores se registran y siguen como [GitHub issues](https://guides.github.com/features/issues/). Después de haber determinado en cuál repositorio está relacionado tu error, crea un issue en ese repositorio y provee la siguiente información llenando la plantilla sugerida.
 
 > **Nota:** Si usted encuentra un issue con estado **Closed** que es igual al mismo que usted esta experimentando, abra un nuevo issue e incluya in link al issue original en el cuerpo de su nuevo issue.
 
