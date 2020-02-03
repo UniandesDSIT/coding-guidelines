@@ -1,6 +1,6 @@
 # Cómo reportar un bug o una mejora
 
-Esta seccion lo guia a traves del envio de errores. Seguir estas guias lo ayudan a que los desarrolladores y la comunidad entiendan su reporte :pencil:, reproduzca el comportamiento :computer: :computer:, y encuentre informes relacionados :mag_right:.
+Esta sección lo guía a través del envío de errores. Seguir estas guías lo ayudan a que los desarrolladores y la comunidad entiendan su reporte :pencil:, reproduzca el comportamiento :computer: :computer:, y encuentre informes relacionados :mag_right:.
 Antes de crear un reporte de bugs, por favor revise [esta lista](#antes-de-sugerir-un-informe-de-error) como puede descubrir que no necesita uno. Cuando usted esta creando un reporte de bugs, por favor [incluya tantos detalles como sea posible](#cómo-presentar-un-buen-informe-de-error). Complete la lantilla definida, la informacion que esta pregunta ayuda a resolver los issues rapido.
 
 ## Antes de sugerir un informe de error
@@ -14,7 +14,7 @@ Los errores se registran y siguen como [GitHub issues](https://guides.github.com
 
 > **Nota:** Si usted encuentra un issue con estado **Closed** que es igual al mismo que usted esta experimentando, abra un nuevo issue e incluya in link al issue original en el cuerpo de su nuevo issue.
 
-Para reportar un bug en un proyecto en github se seguirá el estilo de escritura de pruebas GIVEN-WHEN-THEN introducido como parte de BDD [Behavior-Driven-Development](https://dannorth.net/introducing-bdd/)
+Para reportar un bug en un proyecto en github se seguirá el estilo de escritura de pruebas **GIVEN-WHEN-THEN** introducido como parte de BDD [Behavior-Driven-Development](https://dannorth.net/introducing-bdd/)
 
 ### Given (Dado):
 
@@ -33,7 +33,7 @@ Coloque uno a uno los pasos para reproductir el bug. Sea detallado en cada uno y
 
 * **Comportamiento esperado:** Describa el comportamiento que esperaba el usuario, enlace esta punto la documentación o diseños correspondientes.
 
-### Template)
+### Template
 
 Use el siguiente template como base para reportar cualquier bug en los proyectos de este repositorio:
 
