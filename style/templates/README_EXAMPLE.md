@@ -5,15 +5,15 @@
 Proyecto de administración de notas de estudiantes de ...
 
 
-## 2. Prerequisitos
-Debe tener instaladas en su m?quina las siguientes herramientas: 
+## 2. Pre requisitos
+Debe tener instaladas en su maquina las siguientes herramientas: 
 
 - Java JDK 1.8 
 - Maven: https://maven.apache.org/download.cgi
 - Eclipse: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt
 
 
-## 3. Instalaci?n
+## 3. Instalación
 
 Desde el directorio /lib ejecutar el siguiente comando 
 ```
