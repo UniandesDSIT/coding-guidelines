@@ -1,5 +1,5 @@
 
-
+```
 # Nombre o titulo del proyecto
 
 ## 1. Resumen o Descripcion
@@ -58,8 +58,10 @@ Este proyecto esta bajo la Licencia GPL, BSD, Software Propietario
 
 ## 11. Estado del proyecto
 
-Este proyecto aun esta en fase de desarrollo, actualmente se est· trabajando en los modulos...
+Este proyecto aun esta en fase de desarrollo, actualmente se est√° trabajando en los modulos...
 
-Este proyecto se encuentra en fase de soporte, actualmente no se est·n trabajando nuevos desarrollos sobre el mismo.
+Este proyecto se encuentra en fase de soporte, actualmente no se est√°n trabajando nuevos desarrollos sobre el mismo.
 
-**Nota: Este proyecto cumple con el estandar definido para la gestiÛn de versionamiento del codigo definido por la DSIT. El cual se encuentra publicado en...**
+**Nota: Este proyecto cumple con el estandar definido para la gesti√≥n de versionamiento del codigo definido por la DSIT. El cual se encuentra publicado en...**
+
+```
