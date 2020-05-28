@@ -9,7 +9,7 @@ Definir un estándar de diseño y arquitectura que acople a nivel de desarrollo 
 
 1. [Estructura del proyecto](ESTRUCTURA_PROYECTO.md)
 1. [Patrones de Integración y Buenas Practicas](fuse/PATRONES_B-PRACTICAS.md)
-1. [Definición de API's Rest](fuse/REST_API.md)
+1. [Definición de API's Rest](REST_API.md)
 1. [Documentación Automática (Swagger)](DOCUMENTACION.md)
 1. [Escritura de Pruebas Unitarias](PRUEBAS_UNITARIAS.md)
 1. [Validación de código con SonarQube](SONAR_QUBE.md)
