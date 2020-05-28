@@ -20,4 +20,4 @@ Definir un estándar de diseño y arquitectura que acople a nivel de desarrollo 
 1. [Procesos de CI & CD](CI_CD.md)
 _________________________________________________________________________________________________________
 
-<img src="sources/logos.png?raw=true"/>
+<img src="../sources/logos.png?raw=true"/>
