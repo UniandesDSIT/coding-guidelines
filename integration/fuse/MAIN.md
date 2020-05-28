@@ -7,7 +7,7 @@ Definir un estándar de diseño y arquitectura que acople a nivel de desarrollo 
 
 ## Tabla de Contenido:
 
-1. [Estructura del proyecto](./integration/fuse/ESTRUCTURA_PROYECTO.md)
+1. [Estructura del proyecto](ESTRUCTURA_PROYECTO.md)
 1. [Patrones de Integración y Buenas Practicas](./integration/fuse/PATRONES_B-PRACTICAS.md)
 1. [Definición de API's Rest](./integration/fuse/REST_API.md)
 1. [Documentación Automática (Swagger)](./integration/fuse/DOCUMENTACION.md)
