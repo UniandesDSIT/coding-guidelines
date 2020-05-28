@@ -12,4 +12,4 @@ Definir un estándar de diseño y arquitectura que acople a nivel de procesos bu
 
 _________________________________________________________________________________________________________
 
-<img src="../sources/pentaho.png?raw=true"/>
+<img width="150px" src="../sources/pentaho.png?raw=true"/>
