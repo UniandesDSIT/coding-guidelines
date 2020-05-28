@@ -1,4 +1,4 @@
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]
 
 
 El objetivo de SonarQube, es ayudarle al equipo de desarrollado a mantener un código limpio que permita detectar bugs, vulnerabilidades y posibles mejoras para asegurar un código legible y  mantenible en el tiempo.
@@ -48,4 +48,4 @@ como resultado desde el panel de SonarQube se visualiza el análisis ejecutado y
 Para mayor información:
 https://docs.sonarqube.org/latest/ 
 
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]

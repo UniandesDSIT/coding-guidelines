@@ -1,4 +1,4 @@
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]
 
 
 La estructura de directorios y paquetes del proyecto va acorde a la razón de ser del archivo y su contenido, el dominio por defecto para los proyectos: package **(co.edu.uniandes.fuse.{proyect})**
@@ -69,4 +69,4 @@ Ubicados en la raiz del proyecto
 
 ***
 
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]

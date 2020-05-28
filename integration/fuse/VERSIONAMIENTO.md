@@ -1,4 +1,4 @@
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]
 
 
 Acorde al lineamiento transversal del CedEx de Desarrollo, se trabaja con el modelo de ramas y versionado semantico definido:
@@ -17,4 +17,4 @@ Para el caso de ejecución de varios Sprint en paralelo que modifiquen algún co
 
 <img src="https://github.com/UniandesDSIT/coding-guidelines/blob/master/assets/img/hotfix_branches.PNG?raw=true" width="750" height="400" />
 
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]

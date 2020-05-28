@@ -1,4 +1,4 @@
- [ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+ [ **[Volver al Menú Principal](MAIN.md)** ]
 
 
 ### Uso de Patrones de Integración 
@@ -118,4 +118,4 @@ _Para mayor información: [Guía de Estilo de Código](https://google.github.io/
 *** 
 
 
-[ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
+[ **[Volver al Menú Principal](MAIN.md)** ]
