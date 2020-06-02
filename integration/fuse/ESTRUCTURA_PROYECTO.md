@@ -1,3 +1,4 @@
+
 [ **[Volver al Menú Principal](MAIN.md)** ]
 
 
@@ -28,14 +29,16 @@ Clases que continen la logica del servicio y estan basadas en camel, ademas de h
 
 - **Plantillas (Velocity)** : Archivos que permiten definir una plantilla re-utilizable.
 
-- **Archivos de Propiedades (Properties)** : Archivos donde se define una serie parámetros                                    (llave-valor) con el fin de centralizar datos para configuraciones.
-
-<img src="https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/raw/master/src/main/resources/documentation/dir_resources.png?raw=true?raw=true"/>
+<img src="../sources/resources.png?raw=true"/>
 
 ***
 
 ### Recursos fabric8
+En el directorio src/main/fabric8, se dejan todos los archivos .properties, esto con el fin de aprovechar las caracteristicas de fabric al momento de desplegar los profile.
 
+- **Archivos de Propiedades (Properties)** : Archivos donde se define una serie parámetros                                    (llave-valor) con el fin de centralizar datos para configuraciones.
+
+<img src="../sources/fabric8.png?raw=true"/>
 
 ***
 

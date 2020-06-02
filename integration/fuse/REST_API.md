@@ -1,3 +1,4 @@
+
 [ **[Volver al Menú Principal](MAIN.md)** ]
 
 ### Diseño
@@ -98,12 +99,23 @@ restConfiguration()
 .contextPath("/{{rest.api.name}}/v{{rest.api.version}}")
 ```
 
-En el proeycto Fuse-Netty-Httpp-Server
+### Servidor/Puerto Netty Compartido
 
-Se desplego como servicio OSGI en un esquema blueprint la conexión al server y puerto compartido entre Api's, por detecto se definio el puerto 8186 como el puerto centralizado. el server depende del ambiente (tutaza/topaipi/tenerife ....)
+Se desplego como servicio OSGI en un esquema blueprint la conexión al server y puerto compartido entre Api's, por detecto se definio el puerto 8186 como el puerto centralizado para exponer las REST API. el server depende del ambiente (tutaza/topaipi/tenerife ....), el proyecto se puede descar en : [Netty-Server-GitHub](https://github.com/UniandesDSIT/Fuse-Transversal-Netty-Http)
 
-```
-
+```xml
+	<bean id="configuration"
+		class="org.apache.camel.component.netty.http.NettySharedHttpServerBootstrapConfiguration">
+		<property name="port" value="8186" />
+		<property name="host" value="topaipi.uniandes.edu.co" />
+		<property name="backlog" value="50" />
+	</bean>
+	<bean id="httpServer"
+		class="org.apache.camel.component.netty.http.DefaultNettySharedHttpServer"
+		init-method="start" destroy-method="stop">
+		<property name="nettyServerBootstrapConfiguration" ref="configuration" />
+	</bean>
+	 <service ref="httpServer" interface="org.apache.camel.component.netty.http.NettySharedHttpServer"/>
 ```
 
 Ejemplo donde se crea el recurso "example" con acciones get y post a "user"
