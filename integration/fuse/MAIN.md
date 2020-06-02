@@ -3,7 +3,7 @@
 [ **[Volver al Menú Anterior](https://github.com/UniandesDSIT/coding-guidelines)** ]
 
 # Lineamientos de Desarrollo ESB
-[Descargar versión .docx](../sources/Lineamientos_Dllo_Esb-Fuse.docx)
+[Descargar versión .docx](../sources/Lineamientos_Dllo_Esb-Fuse.docx?raw=true)
 ## Objetivo
 Definir un estándar de diseño y arquitectura que acople a nivel de desarrollo buenas practicas y patrones de integración para la construcción de servicios en Camel para Jboss Fuse.
 
