@@ -128,10 +128,6 @@ rest("/example").description("Example rest service")
          .to("direct:update");
 ```
 
-El Puerto por API es único, para un mejor manejo de los recursos de red.
-
-Al arrancar el servidor el API deberia estar disponible en: http://localhost:9090/APIName/v1.0.0/example/users
-
 Para mayor información:
 https://camel.apache.org/manual/latest/rest-dsl.html
 
