@@ -1,9 +1,11 @@
+
 [ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
 
 Con fin de automatizar procesos se implementa swagger de la mano con Rest Dsl para generar una documentación de las API Rest directamente basada con el código, esto asegura una documentación actualizada.
 
 Se debe documentar en swagger toda API-Rest o servicio que exponga por medio de HTTP **recursos que permita interactuar con otras aplicaciones por medio de acciones como _(consultar / modificar / crear / eliminar)_** haciendo énfasis en la estructura de petición y respuesta, y el manejo de errores.
 
+El servidor con la documentación swagger se encuentra en [http://filandia.uniandes.edu.co/swagger/](http://filandia.uniandes.edu.co/swagger/)
 
 ***
 

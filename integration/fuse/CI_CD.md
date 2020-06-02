@@ -1,3 +1,4 @@
+
 [ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
 
 
@@ -174,6 +175,11 @@ Estos pasos están como plan piloto para una definicion completa de integración
 ```
    mvn release:perform -Darguments="-Dmaven.javadoc.skip=true"
 ```
+- Despliega en el profile de fabric8
+```
+   mvn release:perform -Darguments="-Dmaven.javadoc.skip=true"
+```
+mvn clean -DskipTests=true fabric8:deploy -Dfabric8.jolokiaUrl=http://{user}:{password}@localhost:8181/jolokia -Dfabric8.profileVersion={fabric.container.version}
 
 [ **[Volver al Menú Principal](https://github.com/UniandesDSIT/Fuse-Lab-RestDsl/wiki)** ]
 
