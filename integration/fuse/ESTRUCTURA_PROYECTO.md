@@ -56,6 +56,8 @@ Para el desarrollo y ejecución de pruebas unitarias, las clases java y recursos
 
 - **Fuse Utils**: Este proyecto **"co.edu.uniandes.fuse.core.utils"** centraliza logica general de los servicios en forma de processor y beans, para que sean reutilizados y no escritos repetidamente en cada proyecto.
 
+- **Fuse Netty Server**: Este proyecto **"co.edu.uniandes.netty-http-proxy"** centraliza el server y puerto donde se exponen las APi.
+
 - **Fuse DataSource**: Este proyecto **"co.edu.uniandes.datasources"** centraliza la conexión al datasource de banner para la consulta hacia la Base de Datos.
 
 ***
