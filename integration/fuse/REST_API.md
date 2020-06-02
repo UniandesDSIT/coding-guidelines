@@ -92,11 +92,18 @@ Ejemplo de configuración del servidor para exponer el API Rest, junto con Swagg
 
 ```java
 restConfiguration()
-.component("netty4-http")
+.component("netty-http")
 .bindingMode(RestBindingMode.off) //Off para evitar conflictos con los data formats
-.host("{{rest.api.host}}")
-.port("{{rest.api.port}}")
+.endpointProperty("nettySharedHttpServer", "#sharedNettyHttpServer") //#sharedNettyHttpServer Como servicio osgi que comparte el server y puerto de la API
 .contextPath("/{{rest.api.name}}/v{{rest.api.version}}")
+```
+
+En el proeycto Fuse-Netty-Httpp-Server
+
+Se desplego como servicio OSGI en un esquema blueprint la conexión al server y puerto compartido entre Api's, por detecto se definio el puerto 8186 como el puerto centralizado. el server depende del ambiente (tutaza/topaipi/tenerife ....)
+
+```
+
 ```
 
 Ejemplo donde se crea el recurso "example" con acciones get y post a "user"
