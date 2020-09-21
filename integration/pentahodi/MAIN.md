@@ -9,6 +9,9 @@ Definir un estándar de diseño y arquitectura que acople a nivel de procesos bu
 ## Tabla de Contenido:
 
 1. [Instalación Pentaho Server 9.0.0.0-423](MAIN.md)
+2. [Repositorios Pentaho](REPOSITORIOS.md)
+3. [Estructura de Desarrollo ETL](DESARROLLO.md)
+4. [Pruebas de ETL por medio de Postman](PRUEBAS.md)
 
 _________________________________________________________________________________________________________
 
