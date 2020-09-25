@@ -2,16 +2,38 @@
 
 [ **[Volver al Menú Anterior](https://github.com/UniandesDSIT/coding-guidelines)** ]
 
-# Lineamientos Pentaho DI 
+# Pruebas ETL por medio de Postman
 
-## Objetivo
-Definir un estándar de diseño y arquitectura que acople a nivel de procesos buenas practicas en los procesos ETL.
-## Tabla de Contenido:
+## Despliegue
+Se debe desplegar el proyecto en un pentaho server (ya sea filandia o gama, preferiblemente gama)
 
-1. [Instalación Pentaho Server 9.0.0.0-423](MAIN.md)
-2. [Repositorios Pentaho](REPOSITORIOS.md)
-3. [Estructura de Desarrollo ETL](DESARROLLO.md)
-4. [Pruebas de ETL por medio de Postman](PRUEBAS.md)
+<img src="../sources/repo.png?raw=true"/>
+
+Adicionalmente se debe solicitar al cedEx de Middleware que suban los archivos necesarios para la ejecución del proyecto y creacion de folders necesarios, Ej:
+
+- /home/pentaho/{proyecto}/{proyecto}.properties
+- /home/pentaho/{proyecto}/scripts (En caso de tener scripts en shell)
+- /home/pentaho/{proyecto}/csv (En caso de tener que generar archivos csv)
+
+
+## Ejecución del TEST:
+Por medio de Postman una herramienta opensource para la ejecución de test en API's se hace uso de la URL del servert especificando el folder y el job a ejecutar, en este caso:
+http://gama.uniandes.edu.co:8080/pentaho/kettle/executeJob?rep=local&job=/public/Uplanner/j-agenda
+Es importante que se autentique (user/password) con las credenciales dadas para el servidor.
+
+<src="../sources/postman1.png?raw=true"/>
+
+Una vez se ejecute el test, el servidor respondera una estructura xml donde especifica un jobId, el cual nos permite darle seguimiento al estado del job, por medio de la consola o por medio de otra URL que se puede ejecutar en postman:
+
+http://gama.uniandes.edu.co:8080/pentaho/kettle/jobStatus?id=c51195bd-b091-4a20-a825-ba035da17c5d&xml=Y
+
+<src="../sources/postman2.png?raw=true"/>
+
+Este recurso nos permita saber si el ETL esta en estado:
+- Running
+- Stoped
+- Finished
+- Finished (with errors)
 
 _________________________________________________________________________________________________________
 
