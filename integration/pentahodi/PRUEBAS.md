@@ -21,13 +21,13 @@ Por medio de Postman una herramienta opensource para la ejecución de test en AP
 http://gama.uniandes.edu.co:8080/pentaho/kettle/executeJob?rep=local&job=/public/Uplanner/j-agenda
 Es importante que se autentique (user/password) con las credenciales dadas para el servidor.
 
-<src="../sources/postman1.png?raw=true"/>
+<img src="../sources/postman1.png?raw=true"/>
 
 Una vez se ejecute el test, el servidor respondera una estructura xml donde especifica un jobId, el cual nos permite darle seguimiento al estado del job, por medio de la consola o por medio de otra URL que se puede ejecutar en postman:
 
 http://gama.uniandes.edu.co:8080/pentaho/kettle/jobStatus?id=c51195bd-b091-4a20-a825-ba035da17c5d&xml=Y
 
-<src="../sources/postman2.png?raw=true"/>
+<img src="../sources/postman2.png?raw=true"/>
 
 Este recurso nos permita saber si el ETL esta en estado:
 - Running
