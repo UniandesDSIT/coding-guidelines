@@ -21,7 +21,7 @@ Ejecute el siguiente comando
 $ yum install maven
 ```
 
-### 2 Instalación Git 
+### 3 Instalación Git 
 Ejecute el siguiente comando 
 
 
@@ -29,7 +29,7 @@ Ejecute el siguiente comando
 $ yum install git
 ```
 
-### 3 Instalación node y npm 
+### 4 Instalación node y npm 
 
 Ejecute el siguiente comandos
 
@@ -41,7 +41,7 @@ $ node -v
 $ npm -v
 ```
 
-### 4 Instalación angular 
+### 5 Instalación angular 
 
 Instalación angular
 
