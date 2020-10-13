@@ -49,5 +49,39 @@ Instalación angular
 $ npm install -g @angular/cli
 ```
 
+### 6 Instalación de docker ce 
+
+Ejecute el siguiente comandos
+
+```bash
+$ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+$ dnf list docker-ce
+$ dnf install docker-ce --nobest -y
+$ systemctl start docker
+$ systemctl enable docker
+
+```
+
+
+### 7 Instalación de kubectl 
+
+Ejecute el siguiente comandos, cree el archivo kubernetes.repo en etc/yum.repos.d/kubernetes.repo con el contenido que se especifica abajo
+
+```bash
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+```
+
+Luego ejecute el siguiente comando una vez se hayan actualizado los repositorios
+
+```bash
+$ yum install -y kubectl
+
+```
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
