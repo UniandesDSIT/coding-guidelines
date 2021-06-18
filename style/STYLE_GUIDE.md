@@ -31,3 +31,15 @@ Todo código escrito en PHP debería adherirse a la [PSR-2](https://www.php-fig.
 ## Guía de Estilo para CSS
 
 Todo archivo CSS debería adherirse a las [guías de estílo de CSS](https://cssguidelin.es/)
+
+## Guía de Estilo para Sass
+Todo código escrito en Sass debería adherirse al [Guías de estilo Sass](https://sass-guidelin.es/es/).
+* Se hará indentación a 2 espacios.
+* No se deberá utilizar sintaxis css en los archivo sass.
+* Se debe limitar el uso de !important, solo se debe utilizar en caso extremo de que la regla de estilo no llegue a ser tomada.
+* Los colores deben ir con un solo sistema, es decir no puede haber hexadecimal y RGBA para declarar colores cohabitando un mismo proyecto.
+* Los parámetros de los mixin deben ir en minúscula, sin espacios y serados por guiones.
+* Se debe utilizar para los comentarios "///" (triple barra) y un espacio, esto con el fin que esos comentarios no se compilen y salgan en el archivo .css a producción.
+* Al crear una regla de estilo para varios elementos, cada elemento separado por coma debe ocupar una línea.
+* Se debe limitar el uso de ID para crear reglas de estilo, solo se debe utilizar en caso de que no se tenga manipulación de la maqueta.
+* El nombre de los mixin deben ir en minúscula, sin espacios y separados por guiones.
