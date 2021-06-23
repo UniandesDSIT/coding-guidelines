@@ -5,8 +5,8 @@
 Todo código escrito en Javascript debe adherirse al [JavaScript Standard Style](https://standardjs.com/).
 
 * Prefiera el object spread operator (`{...anotherObj}`) a usar `Object.assign()`.
-* Se hará indentación a 4 espacios.
-* Se usarán _semicolons (;)_ para finalizar una acción.
+* Se hará indentación a 2 espacios.
+* No se usarán _semicolons (;)_ para finalizar una acción.
 
 ## Guía de Estilo de Python
 
@@ -32,8 +32,12 @@ Todo código escrito en PHP debería adherirse a la [PSR-2](https://www.php-fig.
 
 Todo archivo CSS debería adherirse a las [guías de estílo de CSS](https://cssguidelin.es/)
 
+## Semántica HTML5 - BEM
+
+Todo código escrito en HTML5 debería adherise a la [Métodología BEM](http://getbem.com/)
+
 ## Guía de Estilo para Sass
-Todo código escrito en Sass debería adherirse al [Guías de estilo Sass](https://sass-guidelin.es/es/).
+Todo código escrito en Sass debería adherirse al [Guías de estilo Sass](https://sass-guidelin.es/es/)
 * Se hará indentación a 2 espacios.
 * No se deberá utilizar sintaxis css en los archivo sass.
 * Se debe limitar el uso de !important, solo se debe utilizar en caso extremo de que la regla de estilo no llegue a ser tomada.
