@@ -47,3 +47,31 @@ Todo código escrito en Sass debería adherirse al [Guías de estilo Sass](https
 * Al crear una regla de estilo para varios elementos, cada elemento separado por coma debe ocupar una línea.
 * Se debe limitar el uso de ID para crear reglas de estilo, solo se debe utilizar en caso de que no se tenga manipulación de la maqueta.
 * El nombre de los mixin deben ir en minúscula, sin espacios y separados por guiones.
+
+## Guía de Estilo para paleta de color
+
+El formato RGB (Red Green Blue) se utiliza para definir un color en términos de su composición de rojo, verde y azul. Por ejemplo, el color rojo se puede definir como "rgb(255, 0, 0)". La principal ventaja de usar el formato RGB es que es fácil de entender y leer para los desarrolladores y diseñadores que trabajan con colores.
+
+Buena práctica en codificación:
+Todo código escrito en Sass debería adherirse al [Guías de estilo rgb](https://stylelint.io/user-guide/rules/color-function-notation/#legacy)
+
+Pero para nuestros proyectos se sugiere el siguiente formato 
+
+```css
+a {
+ color: rgb(0, 0, 0);
+}
+
+a {
+ color: rgba(12, 122, 231, 0.2)
+}
+
+```
+
+
+
+
+
+
+
+
