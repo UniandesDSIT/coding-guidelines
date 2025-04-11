@@ -1,10 +1,10 @@
-[ **[Volver al Menú Principal](MAIN.md)** ]
+[ **[Volver al Menú Principal](../README.md)** ]
 
-# ✅ Lineamientos de desarrollo para proyectos Drupal 11 (Estrategia Web)
+# Lineamientos de desarrollo para proyectos Drupal 11 (Estrategia Web)
 
 ---
 
-## 🔸 1. Estándares Generales de PHP
+## 1. Estándares Generales de PHP
 
 - Usar **PHP 8.3 o superior**.
 - Seguir la especificación [**PSR-12**](https://www.php-fig.org/psr/psr-12/).
@@ -40,7 +40,7 @@ public function getUserRoles(User $user): array {
 
 ---
 
-## 🔸 2. Buenas Prácticas en Drupal
+## 2. Buenas Prácticas en Drupal
 
 - Seguir los [**Drupal Coding Standards**](https://www.drupal.org/docs/develop/standards) usando:
   - Extensión de **VSCode**.
@@ -67,7 +67,7 @@ $violations = $entity->validate();
 
 ---
 
-## 🔸 3. Uso Obligatorio de Herramientas de Calidad
+## 3. Uso Obligatorio de Herramientas de Calidad
 
 - Usar **PHPStan** con nivel mínimo `5` (idealmente `7` u `8`).
 - Usar **PHPCS** con los estándares `Drupal` y `DrupalPractice`:
@@ -88,7 +88,7 @@ phpcs --standard=Drupal web/modules/custom
 
 ---
 
-## 🔸 4. SonarLint Obligatorio en VS Code
+## 4. SonarLint Obligatorio en VS Code
 
 - Instalar la extensión **SonarLint** en VS Code.
 - Asociar el workspace al proyecto de **SonarQube/SonarCloud** si está disponible.
@@ -105,7 +105,7 @@ phpcs --standard=Drupal web/modules/custom
 
 ---
 
-## 🔸 5. Otros Lineamientos Complementarios
+## 5. Otros Lineamientos Complementarios
 
 - Evitar lógica compleja en archivos `.html.twig`.
 - Separar lógica de **backend del renderizado**.
@@ -140,4 +140,4 @@ _Para más detalles: [Drupal Coding Standards](https://www.drupal.org/docs/devel
 
 ---
 
-[ **[Volver al Menú Principal](README.md)** ]
+[ **[Volver al Menú Principal](../README.md)** ]

@@ -26,7 +26,7 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 	* [Cómo reportar un bug](./style/WRITE_BUG.md)	
 	* [Cómo debe ser un Pull request](./style/PULL_REQUESTS.md)
 3. Lineamientos para los procesos Desarrollo
-    * [Lineamientos DB](https://uniandes-my.sharepoint.com/:w:/g/personal/adan_rodriguezr_uniandes_edu_co/EfrA5QJr70pBlhzzwA2eptwBbdjDAUwYCnYstlTUNlcgyQ?e=mGnE8X)
+    * [Lineamientos DB](./guidelines/DB.md)
 	* [Lineamientos PHP-DRUPAL](./guidelines/PHP-DRUPAL.md)
     * [Integración de Servicios y API's ESB - Fuse](./integration/fuse/MAIN.md)
     * [Integración procesos ETL - Pentaho DI](./integration/pentahodi/MAIN.md)
