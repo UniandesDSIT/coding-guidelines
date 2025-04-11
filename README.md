@@ -28,6 +28,7 @@ La Dirección de Servicios de Información y Tecnología es una unidad organizat
 3. Lineamientos para los procesos Desarrollo
     * [Lineamientos DB](./guidelines/DB.md)
 	* [Lineamientos PHP-DRUPAL](./guidelines/PHP-DRUPAL.md)
+	* [Lineamientos JAVA](./guidelines/JAVA.md)
     * [Integración de Servicios y API's ESB - Fuse](./integration/fuse/MAIN.md)
     * [Integración procesos ETL - Pentaho DI](./integration/pentahodi/MAIN.md)
 5. Lineamientos CI
